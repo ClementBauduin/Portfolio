@@ -1,0 +1,7 @@
+@media (min-width: 768px) {
+  .contactContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    background-color: var(--background-color);
+  }
+}/*# sourceMappingURL=Contact.module.css.map */

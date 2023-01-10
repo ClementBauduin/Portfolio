@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+  .aboutContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .aboutContainer .letter {
+    width: 65%;
+    padding: 12px;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .letter h1 {
+    color: var(--primary-color);
+    width: 100%;
+  }
+  .aboutContainer .letter:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../assets/gradient.svg) no-repeat;
+    position: absolute;
+    top: 0%;
+    left: -1%;
+  }
+  .aboutContainer .letter:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../assets/gradient.svg) no-repeat;
+    position: absolute;
+    bottom: -1%;
+    left: -1%;
+  }
+  .aboutContainer .letter .sentence {
+    margin-bottom: 1rem;
+  }
+  .aboutContainer .contact {
+    align-self: center;
+    width: 30%;
+    padding: 12px;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .contact h1 {
+    color: var(--primary-color);
+    width: 100%;
+  }
+  .aboutContainer .contact:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../assets/gradient.svg) no-repeat;
+    position: absolute;
+    top: 0%;
+    left: -1%;
+  }
+  .aboutContainer .contact:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../assets/gradient.svg) no-repeat;
+    position: absolute;
+    bottom: -1%;
+    left: -1%;
+  }
+  .aboutContainer .contact .infoWrapper {
+    height: 100%;
+  }
+  .aboutContainer .contact .infoWrapper a:hover {
+    color: var(--secondary-color);
+  }
+}/*# sourceMappingURL=About.module.css.map */
