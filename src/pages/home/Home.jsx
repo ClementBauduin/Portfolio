@@ -1,6 +1,5 @@
 import React,{useRef,useEffect} from 'react'
 import Style from './Home.module.css'
-import face from '../../assets/face.png'
 import photo from '../../assets/photo.png'
 import { PowerGlitch } from 'powerglitch'
 

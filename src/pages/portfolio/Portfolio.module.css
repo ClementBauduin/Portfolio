@@ -1,26 +1,6 @@
-@-webkit-keyframes slide-in-right {
-  0% {
-    transform: translateX(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @keyframes slide-in-right {
   0% {
     transform: translateX(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slide-in-left {
-  0% {
-    transform: translateX(-30px);
     opacity: 0;
   }
   100% {
@@ -36,63 +16,6 @@
   100% {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-@-webkit-keyframes glitch {
-  0% {
-    -webkit-clip-path: var(--slice-1);
-            clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    -webkit-clip-path: var(--slice-3);
-            clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    -webkit-clip-path: var(--slice-1);
-            clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    -webkit-clip-path: var(--slice-3);
-            clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    -webkit-clip-path: var(--slice-2);
-            clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    -webkit-clip-path: var(--slice-3);
-            clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    -webkit-clip-path: var(--slice-4);
-            clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    -webkit-clip-path: var(--slice-2);
-            clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    -webkit-clip-path: var(--slice-5);
-            clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    -webkit-clip-path: var(--slice-1);
-            clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    -webkit-clip-path: var(--slice-1);
-            clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
   }
 }
 @keyframes glitch {
@@ -171,7 +94,6 @@
     max-height: 100%;
     border: 5px solid black;
     color: black;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 12px;
@@ -207,9 +129,9 @@
     justify-content: space-between;
   }
   .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live,
-.portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live::after,
-.portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub,
-.portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub::after {
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live::after,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub::after {
     cursor: pointer;
     font-family: "Orbitron", sans-serif;
     background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
@@ -260,11 +182,9 @@
             clip-path: var(--slice-0);
   }
   .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live:hover::after,
-.portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub:hover::after {
-    -webkit-animation: 1s glitch;
-            animation: 1s glitch;
-    -webkit-animation-timing-function: steps(2, end);
-            animation-timing-function: steps(2, end);
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
   }
   .portfolioContainer .portfolioWrapper .sideInfo:hover {
     background-color: rgba(255, 255, 255, 0.75);
@@ -276,7 +196,6 @@
     align-self: center;
   }
   .portfolioContainer .portfolioWrapper .videoContainer .videoWrapper {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 100%;
@@ -288,15 +207,11 @@
     background-color: var(--secondary-color);
   }
   .slideInRight {
-    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    -webkit-animation-delay: 0.15s;
-            animation-delay: 0.15s;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.15s;
   }
   .slideInLeft {
-    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    -webkit-animation-delay: 0.15s;
-            animation-delay: 0.15s;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.15s;
   }
 }/*# sourceMappingURL=Portfolio.module.css.map */
