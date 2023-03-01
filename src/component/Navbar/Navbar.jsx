@@ -6,8 +6,6 @@ function Navbar(props) {
   const {scrollToRef} = props
   const {portfolioRef} = props
   const {aboutRef} = props
-  const {contactRef} = props
-
 
   return (
     <>
