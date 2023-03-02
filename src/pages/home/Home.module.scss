@@ -155,3 +155,96 @@
         }
     }
 }
+
+@media (max-width:768px) {
+
+    .main {
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10vmin;
+
+        /* Make the image fit the whole height*/
+        .imageWrapper {
+            display: flex;
+            align-self: center;
+            border: 5px solid white;
+            padding: 12px;
+            background-color: var(--primary-color);
+            animation: roll-in-blurred-left 0.65s ease-out both;
+
+            .image {
+                width: inherit;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+
+            div {
+                width: 100%;
+                max-height: 100%;
+            }
+
+        }
+
+        .sideInfo {
+
+            font-family: 'Rajdhani';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            .textContainer {
+
+                font-size: 8vmin;
+
+                h1 {
+
+                    font-size: inherit;
+                    white-space: nowrap;
+                }
+
+                .articleA {
+
+                    font-size: inherit;
+                    margin-right: 1rem;
+
+                }
+
+                .webDev {
+                    font-size: inherit;
+                    background-color: var(--primary-color);
+                    display: inline;
+                    border-radius: 5px 0 15px 0;
+                    padding: 5px;
+                    color: black;
+
+                }
+
+                p {
+                    font-size: inherit;
+
+                    .blueLetter {
+                        color: var(--primary-color);
+                    }
+
+                    .redLetter {
+                        color: var(--tertiary-color);
+                    }
+
+                }
+
+            }
+
+            .buttonWrapper {
+                display: none;
+
+            }
+        }
+    }
+}

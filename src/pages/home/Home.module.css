@@ -212,4 +212,72 @@
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
   }
+}
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10vmin;
+    /* Make the image fit the whole height*/
+  }
+  .main .imageWrapper {
+    display: flex;
+    align-self: center;
+    border: 5px solid white;
+    padding: 12px;
+    background-color: var(--primary-color);
+    animation: roll-in-blurred-left 0.65s ease-out both;
+  }
+  .main .imageWrapper .image {
+    width: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .main .imageWrapper div {
+    width: 100%;
+    max-height: 100%;
+  }
+  .main .sideInfo {
+    font-family: "Rajdhani";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .main .sideInfo .textContainer {
+    font-size: 8vmin;
+  }
+  .main .sideInfo .textContainer h1 {
+    font-size: inherit;
+    white-space: nowrap;
+  }
+  .main .sideInfo .textContainer .articleA {
+    font-size: inherit;
+    margin-right: 1rem;
+  }
+  .main .sideInfo .textContainer .webDev {
+    font-size: inherit;
+    background-color: var(--primary-color);
+    display: inline;
+    border-radius: 5px 0 15px 0;
+    padding: 5px;
+    color: black;
+  }
+  .main .sideInfo .textContainer p {
+    font-size: inherit;
+  }
+  .main .sideInfo .textContainer p .blueLetter {
+    color: var(--primary-color);
+  }
+  .main .sideInfo .textContainer p .redLetter {
+    color: var(--tertiary-color);
+  }
+  .main .sideInfo .buttonWrapper {
+    display: none;
+  }
 }/*# sourceMappingURL=Home.module.css.map */

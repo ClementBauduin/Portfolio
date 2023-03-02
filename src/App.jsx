@@ -18,11 +18,10 @@ function App() {
     <>
         <main style={{height:"100vh",overflowY:"scroll",scrollSnapType:"y mandatory"}}>
           <Navbar portfolioRef={portfolioRef} aboutRef={aboutRef} scrollToRef={scrollToRef}/>
-          <Home portfolioRef={portfolioRef} scrollToRef={scrollToRef}/>
+          <Home portfolioRef={portfolioRef} aboutRef={aboutRef} scrollToRef={scrollToRef}/>
           <Portfolio ref={portfolioRef}/>
-          <About ref={aboutRef}/>
-          
-      </main>
+          <About ref={aboutRef}/>  
+        </main>
     </>
   )
 }

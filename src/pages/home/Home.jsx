@@ -7,7 +7,7 @@ function Home(props) {
 
   const {scrollToRef} = props
   const {portfolioRef} = props
-  const {contactRef} = props
+  const {aboutRef} = props
 
   const imageRef = useRef(null)
   
@@ -56,7 +56,7 @@ function Home(props) {
           </div>
           <div className={Style.buttonWrapper}>           
               <button onClick={() => scrollToRef(portfolioRef)} className={Style.portfolioButton}>PORTFOLIO</button>          
-              <button onClick={() => scrollToRef(contactRef)} className={Style.workTogether}>LET'S WORK TOGETHER</button>           
+              <button onClick={() => scrollToRef(aboutRef)} className={Style.workTogether}>LET'S WORK TOGETHER</button>           
           </div>
         </div>
       </div>
