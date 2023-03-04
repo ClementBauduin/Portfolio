@@ -116,3 +116,73 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .aboutContainer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .letter {
+
+            width: 100%;
+            padding: 12px;
+            line-height: 1.6;
+            font-family: "Rajdhani";
+            font-weight: 500;
+            font-size: 1.8rem;
+            color: white;
+            position: relative;
+
+            h1 {
+                text-align: center;
+                color: var(--primary-color);
+                width: 100%;
+
+            }
+
+            .sentence {
+                margin-bottom: 1rem;
+            }
+
+
+        }
+
+        .contact {
+
+            align-self: center;
+            width: 100%;
+            padding: 12px;
+            line-height: 1.6;
+            font-family: "Rajdhani";
+            font-weight: 500;
+            font-size: 1.8rem;
+            color: white;
+            position: relative;
+
+
+            h1 {
+                text-align: center;
+                color: var(--primary-color);
+                width: 100%;
+
+            }
+
+            .infoWrapper {
+
+                font-size: 1.5rem;
+
+                a {
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}

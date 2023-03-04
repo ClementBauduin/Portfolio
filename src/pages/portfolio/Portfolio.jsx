@@ -42,7 +42,7 @@ const Portfolio = React.forwardRef((_props, ref) => {
       </div>
       <div className={Style.portfolioContainer}>
         <div className={Style.portfolioWrapper}>
-            <div className={Style.sideInfo} style={{order:'1'}}>
+            <div className={Style.sideInfo} style={{order:'0'}}>
               <div className={Style.textInfo}>
                 <h2 className={Style.mainTitle}>CAR DEALER</h2>
                 <h3 className={Style.listTitle}>Made with :</h3>

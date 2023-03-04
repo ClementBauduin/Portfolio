@@ -84,4 +84,52 @@
   .aboutContainer .contact .infoWrapper a:hover {
     color: var(--secondary-color);
   }
+}
+@media (max-width: 768px) {
+  .aboutContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutContainer .letter {
+    width: 100%;
+    padding: 12px;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .letter h1 {
+    text-align: center;
+    color: var(--primary-color);
+    width: 100%;
+  }
+  .aboutContainer .letter .sentence {
+    margin-bottom: 1rem;
+  }
+  .aboutContainer .contact {
+    align-self: center;
+    width: 100%;
+    padding: 12px;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .contact h1 {
+    text-align: center;
+    color: var(--primary-color);
+    width: 100%;
+  }
+  .aboutContainer .contact .infoWrapper {
+    font-size: 1.5rem;
+  }
+  .aboutContainer .contact .infoWrapper a:hover {
+    color: var(--secondary-color);
+  }
 }/*# sourceMappingURL=About.module.css.map */
