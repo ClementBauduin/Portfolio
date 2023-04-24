@@ -1,0 +1,370 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    -webkit-clip-path: var(--slice-4);
+            clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    -webkit-clip-path: var(--slice-5);
+            clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+}
+@media (min-width: 769px) {
+  .portfolioContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    padding: 2%;
+    background: url(../../assets/backgroundPortfolio.jpg) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .portfolioContainer .portfolioWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo {
+    width: 19%;
+    max-height: 100%;
+    border: 5px solid black;
+    color: black;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px;
+    align-self: center;
+    overflow: hidden;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo .mainTitle {
+    font-weight: 700;
+    padding-bottom: 12px;
+    font-size: 3vw;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo .listTitle {
+    font-weight: 600;
+    padding-bottom: 12px;
+    font-size: 3vmin;
+    font-family: "Rajdhani";
+    text-align: start;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo .techList {
+    text-align: start;
+    font-family: "Rajdhani";
+    font-size: 2.5vmin;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live::after,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub::after {
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #ffffff;
+    letter-spacing: 3px;
+    padding: 1vmin;
+    box-shadow: 2px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    font-size: 1.5vmin;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "LET'S WORK TOGETHER";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    -webkit-clip-path: var(--slice-0);
+            clip-path: var(--slice-0);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "PORTFOLIO";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    -webkit-clip-path: var(--slice-0);
+            clip-path: var(--slice-0);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live:hover::after,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .mobileVideoWrapper {
+    display: none;
+  }
+  .portfolioContainer .portfolioWrapper .videoContainer {
+    width: 80%;
+    color: black;
+    align-self: center;
+    aspect-ratio: 16/9;
+    max-height: 100%;
+  }
+  .portfolioContainer .portfolioWrapper .videoContainer iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioSecondContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    background-color: var(--secondary-color);
+  }
+  .slideInRight {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.15s;
+  }
+  .slideInLeft {
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.15s;
+  }
+}
+@media (max-width: 768px) {
+  .portfolioContainer {
+    padding: 2%;
+    background: url(../../assets/backgroundPortfolio.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .portfolioContainer .portfolioWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo {
+    width: 100%;
+    max-height: 100%;
+    border: 5px solid black;
+    color: black;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px;
+    align-self: center;
+    overflow: hidden;
+    margin-bottom: 5vmin;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo .mainTitle {
+    font-weight: 700;
+    padding-bottom: 1vmin;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo .listTitle {
+    font-weight: 600;
+    padding-bottom: 1vmin;
+    font-size: 2rem;
+    font-family: "Rajdhani";
+    text-align: center;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .textInfo .techList {
+    text-align: center;
+    font-family: "Rajdhani";
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5vmin;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live::after,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub::after {
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #ffffff;
+    letter-spacing: 3px;
+    padding: 2vmin;
+    box-shadow: 2px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "LET'S WORK TOGETHER";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    -webkit-clip-path: var(--slice-0);
+            clip-path: var(--slice-0);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "PORTFOLIO";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    -webkit-clip-path: var(--slice-0);
+            clip-path: var(--slice-0);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .live:hover::after,
+  .portfolioContainer .portfolioWrapper .sideInfo .buttonsWrapper .gitHub:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .mobileVideoWrapper {
+    width: 100%;
+    color: black;
+    align-self: center;
+    aspect-ratio: 16/9;
+    max-height: 100%;
+  }
+  .portfolioContainer .portfolioWrapper .sideInfo .mobileVideoWrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioContainer .portfolioWrapper .videoContainer {
+    display: none;
+    width: 80%;
+    color: black;
+    align-self: center;
+    aspect-ratio: 16/9;
+    max-height: 100%;
+  }
+  .portfolioContainer .portfolioWrapper .videoContainer iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolioSecondContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    background-color: var(--secondary-color);
+  }
+  .slideInRight {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.15s;
+  }
+  .slideInLeft {
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.15s;
+  }
+}/*# sourceMappingURL=Portfolio.module.css.map */

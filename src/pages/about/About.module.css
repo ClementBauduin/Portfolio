@@ -1,0 +1,128 @@
+@media (min-width: 769px) {
+  .aboutContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+  .aboutContainer .letter {
+    width: 100%;
+    padding: 12px;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .letter h1 {
+    color: var(--primary-color);
+    width: 100%;
+    font-size: 6vmin;
+  }
+  .aboutContainer .letter:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../assets/gradient.svg) no-repeat;
+    position: absolute;
+    top: 0%;
+    left: -1%;
+  }
+  .aboutContainer .letter .sentence {
+    margin-bottom: 1rem;
+    font-size: 2.5vmin;
+  }
+  .aboutContainer .contact {
+    width: 100%;
+    padding: 12px;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .contact h1 {
+    color: var(--primary-color);
+    width: 100%;
+    font-size: 6vmin;
+  }
+  .aboutContainer .contact:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: url(../../assets/gradient.svg) no-repeat;
+    position: absolute;
+    bottom: -1%;
+    left: -1%;
+  }
+  .aboutContainer .contact .infoWrapper {
+    height: 100%;
+    white-space: nowrap;
+  }
+  .aboutContainer .contact .infoWrapper p {
+    font-size: 2.5vmin;
+  }
+  .aboutContainer .contact .infoWrapper a:hover {
+    color: var(--secondary-color);
+  }
+}
+@media (max-width: 768px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 12px;
+  }
+  .aboutContainer .letter {
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    color: white;
+    position: relative;
+  }
+  .aboutContainer .letter h1 {
+    text-align: center;
+    color: var(--primary-color);
+    width: 100%;
+    font-size: 4vmax;
+  }
+  .aboutContainer .letter .sentence {
+    margin-bottom: 1rem;
+    font-size: 2vmax;
+  }
+  .aboutContainer .letter p:last-of-type {
+    margin-bottom: 0;
+  }
+  .aboutContainer .contact {
+    align-self: center;
+    width: 100%;
+    line-height: 1.6;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  .aboutContainer .contact h1 {
+    text-align: center;
+    color: var(--primary-color);
+    width: 100%;
+    font-size: 4vmax;
+  }
+  .aboutContainer .contact .infoWrapper {
+    font-size: 2vmax;
+  }
+  .aboutContainer .contact .infoWrapper a {
+    color: var(--secondary-color);
+  }
+}/*# sourceMappingURL=About.module.css.map */

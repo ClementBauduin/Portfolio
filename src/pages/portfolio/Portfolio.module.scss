@@ -1,0 +1,349 @@
+@import "./animations/animations.scss";
+
+@media (min-width:769px) {
+    .portfolioContainer {
+        height: 100vh;
+        scroll-snap-align: center;
+        padding: 2%;
+        background: url(../../assets/backgroundPortfolio.jpg) no-repeat center center;
+        background-size: 100% 100%;
+
+        .portfolioWrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+
+            .sideInfo {
+                width: 19%;
+                max-height: 100%;
+                border: 5px solid black;
+                color: black;
+                height: fit-content;
+                padding: 12px;
+                align-self: center;
+                overflow: hidden;
+
+                .textInfo {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.4rem;
+
+                    .mainTitle {
+                        font-weight: 700;
+                        padding-bottom: 12px;
+                        font-size: 3vw;
+                    }
+
+                    .listTitle {
+                        font-weight: 600;
+                        padding-bottom: 12px;
+                        font-size: 3vmin;
+                        font-family: "Rajdhani";
+                        text-align: start;
+                    }
+
+                    .techList {
+                        text-align: start;
+                        font-family: "Rajdhani";
+                        font-size: 2.5vmin;
+                        font-weight: 500;
+                        line-height: 1.6;
+                    }
+                }
+
+                .buttonsWrapper {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .live,
+                    .live::after,
+                    .gitHub,
+                    .gitHub::after {
+                        cursor: pointer;
+                        font-family: "Orbitron", sans-serif;
+                        background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                        border: 0;
+                        color: #ffffff;
+                        letter-spacing: 3px;
+                        padding: 1vmin;
+                        box-shadow: 2px 0px 0px #00E6F6;
+                        outline: transparent;
+                        position: relative;
+                        font-size: 1.5vmin;
+                    }
+
+                    .live::after {
+                        --slice-0: inset(50% 50% 50% 50%);
+                        --slice-1: inset(80% -6px 0 0);
+                        --slice-2: inset(50% -6px 30% 0);
+                        --slice-3: inset(10% -6px 85% 0);
+                        --slice-4: inset(40% -6px 43% 0);
+                        --slice-5: inset(80% -6px 5% 0);
+                        content: "LET'S WORK TOGETHER";
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                        clip-path: var(--slice-0);
+
+                    }
+
+                    .gitHub::after {
+                        --slice-0: inset(50% 50% 50% 50%);
+                        --slice-1: inset(80% -6px 0 0);
+                        --slice-2: inset(50% -6px 30% 0);
+                        --slice-3: inset(10% -6px 85% 0);
+                        --slice-4: inset(40% -6px 43% 0);
+                        --slice-5: inset(80% -6px 5% 0);
+                        content: "PORTFOLIO";
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                        clip-path: var(--slice-0);
+                    }
+
+                    .live:hover::after,
+                    .gitHub:hover::after {
+                        animation: 1s glitch;
+                        animation-timing-function: steps(2, end);
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba($color: #fff, $alpha: 0.75);
+
+                }
+
+                .mobileVideoWrapper {
+                    display: none;
+                }
+
+            }
+
+            .videoContainer {
+
+                width: 80%;
+                color: black;
+                align-self: center;
+                aspect-ratio: 16/9;
+                max-height: 100%;
+
+                iframe {
+
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+
+    }
+
+    .portfolioSecondContainer {
+        height: 100vh;
+        scroll-snap-align: center;
+        background-color: var(--secondary-color);
+    }
+
+    .slideInRight {
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.15s;
+    }
+
+    .slideInLeft {
+        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.15s;
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+    .portfolioContainer {
+
+        padding: 2%;
+        background: url(../../assets/backgroundPortfolio.jpg) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+
+        .portfolioWrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            .sideInfo {
+                width: 100%;
+                max-height: 100%;
+                border: 5px solid black;
+                color: black;
+                height: fit-content;
+                padding: 12px;
+                align-self: center;
+                overflow: hidden;
+                margin-bottom: 5vmin;
+
+                .textInfo {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.4rem;
+
+                    .mainTitle {
+                        font-weight: 700;
+                        padding-bottom: 1vmin;
+                    }
+
+                    .listTitle {
+                        font-weight: 600;
+                        padding-bottom: 1vmin;
+                        font-size: 2rem;
+                        font-family: "Rajdhani";
+                        text-align: center;
+                    }
+
+                    .techList {
+                        text-align: center;
+                        font-family: "Rajdhani";
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        line-height: 1.4;
+                    }
+                }
+
+                .buttonsWrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 3.5vmin;
+
+                    .live,
+                    .live::after,
+                    .gitHub,
+                    .gitHub::after {
+                        cursor: pointer;
+                        font-family: "Orbitron", sans-serif;
+                        background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                        border: 0;
+                        color: #ffffff;
+                        letter-spacing: 3px;
+                        padding: 2vmin;
+                        box-shadow: 2px 0px 0px #00E6F6;
+                        outline: transparent;
+                        position: relative;
+                    }
+
+                    .live::after {
+                        --slice-0: inset(50% 50% 50% 50%);
+                        --slice-1: inset(80% -6px 0 0);
+                        --slice-2: inset(50% -6px 30% 0);
+                        --slice-3: inset(10% -6px 85% 0);
+                        --slice-4: inset(40% -6px 43% 0);
+                        --slice-5: inset(80% -6px 5% 0);
+                        content: "LET'S WORK TOGETHER";
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                        clip-path: var(--slice-0);
+
+                    }
+
+                    .gitHub::after {
+                        --slice-0: inset(50% 50% 50% 50%);
+                        --slice-1: inset(80% -6px 0 0);
+                        --slice-2: inset(50% -6px 30% 0);
+                        --slice-3: inset(10% -6px 85% 0);
+                        --slice-4: inset(40% -6px 43% 0);
+                        --slice-5: inset(80% -6px 5% 0);
+                        content: "PORTFOLIO";
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                        clip-path: var(--slice-0);
+                    }
+
+                    .live:hover::after,
+                    .gitHub:hover::after {
+                        animation: 1s glitch;
+                        animation-timing-function: steps(2, end);
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba($color: #fff, $alpha: 0.75);
+
+                }
+
+                .mobileVideoWrapper {
+
+                    width: 100%;
+                    color: black;
+                    align-self: center;
+                    aspect-ratio: 16/9;
+                    max-height: 100%;
+
+                    iframe {
+
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+
+            }
+
+            .videoContainer {
+                display: none;
+                width: 80%;
+                color: black;
+                align-self: center;
+                aspect-ratio: 16/9;
+                max-height: 100%;
+
+                iframe {
+
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+
+    }
+
+    .portfolioSecondContainer {
+        height: 100vh;
+        scroll-snap-align: center;
+        background-color: var(--secondary-color);
+    }
+
+    .slideInRight {
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.15s;
+    }
+
+    .slideInLeft {
+        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.15s;
+    }
+
+}
