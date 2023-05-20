@@ -81,8 +81,8 @@ const Portfolio = React.forwardRef((_props, ref) => {
                 </ul>
               </div>
               <div className={Style.buttonsWrapper}>
-                <button className={Style.gitHub} onClick={() => openInNewTab("https://github.com/ClementBauduin/Front-Car-Dealer")}>Github</button>
-                <button className={Style.live} onClick={() => openInNewTab("https://car-dealer-bauduin-clement.netlify.app/")}>Live</button>
+                <button className={Style.gitHub} onClick={() => openInNewTab("https://github.com/ClementBauduin/Teamfight-Tactics-Helper")}>Github</button>
+                <button className={Style.live} onClick={() => openInNewTab("https://www.tft-helper.clementbauduin.com/")}>Live</button>
               </div>
               <div className={Style.mobileVideoWrapper}>
                 <iframe src="https://www.youtube.com/embed/cmBRdyCZEF4?rel=0&autoplay=1&mute=1" frameBorder="0" allowFullScreen ></iframe>
