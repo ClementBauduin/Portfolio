@@ -15,7 +15,7 @@ const About = React.forwardRef((_pros, ref) =>  {
       <div className={Style.contact}>
         <h1>Contact</h1>
         <div className={Style.infoWrapper}>
-          <p>Email : <a href="mailto:clementbauduincontact@gmail.com:">clementbauduincontact@gmail.com</a></p>
+          <p>Email : <a href="mailto:contact@clementbauduin.com:">contact@clementbauduin.com</a></p>
           <p>Phone : <a href="tel:+337 62 62 37 69">+33 7 62 62 37 69</a></p>
           <p>GitHub : <a href="https://github.com/ClementBauduin" target="_blank" rel="noopener noreferrer">https://github.com/ClementBauduin</a></p>
         </div>
