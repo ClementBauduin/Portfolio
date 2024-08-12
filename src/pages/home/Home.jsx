@@ -45,18 +45,19 @@ function Home(props) {
         </div>
         <div className={Style.sideInfo}>
           <div className={Style.textContainer}>
-            <h1>I'm Clement Bauduin.</h1>
-            <span className={Style.articleA}>A</span>
-            <h2 className={Style.webDev}>React Developer</h2>
-            <p>Based in 
+            <h1>Clément Bauduin</h1>
+            <h1>Technicien polyvalent en IT. </h1>
+            {/* <span className={Style.articleA}>A</span> */}
+            {/* <h2 className={Style.webDev}>React Developer</h2> */}
+            {/* <p>Based in 
               <span className={Style.blueLetter}> Fr</span>
               <span className={Style.whiteLetter}>an</span>
               <span className={Style.redLetter}>ce</span>
-            .</p>
+            .</p> */}
           </div>
           <div className={Style.buttonWrapper}>           
               <button onClick={() => scrollToRef(portfolioRef)} className={Style.portfolioButton}>PORTFOLIO</button>          
-              <button onClick={() => scrollToRef(aboutRef)} className={Style.workTogether}>LET'S WORK TOGETHER</button>           
+              <button onClick={() => scrollToRef(aboutRef)} className={Style.workTogether}>ABOUT ME</button>   
           </div>
         </div>
       </div>

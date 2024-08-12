@@ -70,6 +70,13 @@
   .aboutContainer .contact .infoWrapper a:hover {
     color: var(--secondary-color);
   }
+  .aboutContainer .contact .infoWrapper .Ps {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    font-size: 2vmin;
+  }
 }
 @media (max-width: 768px) {
   .aboutContainer {

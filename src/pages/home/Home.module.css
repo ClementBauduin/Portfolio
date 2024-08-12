@@ -170,7 +170,8 @@
     box-shadow: 2px 0px 0px #00E6F6;
     outline: transparent;
     position: relative;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    padding: 0px 15px;
   }
   .main .sideInfo .buttonWrapper .workTogether::after {
     --slice-0: inset(50% 50% 50% 50%);

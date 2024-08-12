@@ -43,7 +43,7 @@
     transition: color 0.35s ease 0s;
   }
   .header nav ul li:hover:before {
-    width: 100px;
+    width: 110px;
   }
   .header nav ul li:before {
     content: "";

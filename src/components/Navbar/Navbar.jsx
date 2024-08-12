@@ -14,7 +14,7 @@ function Navbar(props) {
           <nav>
               <ul>
                   <li onClick={() => scrollToRef(portfolioRef)}>Portfolio</li>
-                  <li onClick={() => scrollToRef(aboutRef)}>About me</li>
+                  <li onClick={() => scrollToRef(aboutRef)}>À propos de moi</li>
                   <li onClick={() => scrollToRef(aboutRef)}>Contact</li>
               </ul>
           </nav>
